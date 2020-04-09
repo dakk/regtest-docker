@@ -21,4 +21,5 @@ EXPOSE 18443
 
 RUN chmod +x /start_bitcoind.sh
 
-ENTRYPOINT ["/start_bitcoind.sh"]
+# ENTRYPOINT ["/start_bitcoind.sh"]
+CMD "/bin/bash /start_bitcoind.sh"
