@@ -15,8 +15,8 @@ RUN apt install -y \
 RUN wget https://bitcoincore.org/bin/bitcoin-core-0.19.1/bitcoin-0.19.1-x86_64-linux-gnu.tar.gz && \
    tar -xf bitcoin-0.19.1-x86_64-linux-gnu.tar.gz
 
+COPY . /root
 WORKDIR /root
-
 COPY start_bitcoind.sh ./
 
 RUN chmod +x start_bitcoind.sh
