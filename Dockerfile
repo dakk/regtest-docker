@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 MAINTAINER Davide Gessa
 
-RUN apt update && apt upgrade
+RUN apt update -y && apt upgrade -y
 RUN apt install -y \
    curl \
    wget \
